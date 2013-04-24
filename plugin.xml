@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+       
+  	    <extension id="GeneratLabels" 
+               point="org.protege.editor.core.application.EditorKitMenuAction">
+        <name value="Generate OntoVerbal Labels"/>
+        <path value="org.protege.editor.owl.menu.tools/SlotG-A"/>
+        <toolTip value="This menu appears in the tools menu"/>
+        <class value="OWLLabelGenerator"/>
+        <editorKitId value="any"/>
+    </extension>
+    
+    <extension id="OntoVerbalDescriptionTab"
+			point="org.protege.editor.core.application.ViewComponent">
+  		<label value="OntoVerbal Description Tab"/>
+  		<class value="OntoVerbalDescriptionTab"/>
+  		<headerColor value="@org.protege.classcolor"/>
+  		<category value="@org.protege.classcategory"/>
+  	</extension>
+  	
+  	 <!-- 	    <extension id="OntoVerbalClassDefinition" 
+               point="org.protege.editor.core.application.EditorKitMenuAction">
+        <name value="OntoVerbal Class Definition Generator"/>
+        <path value="org.protege.editor.owl.menu.tools/SlotG-A"/>
+        <toolTip value="This menu appears in the tools menu"/>
+        <class value="OntoVerbalClassDefinitionGenerator"/>
+        <editorKitId value="any"/>
+    </extension> -->
+    
+</plugin>
